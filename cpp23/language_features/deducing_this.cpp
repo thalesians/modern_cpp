@@ -1,3 +1,5 @@
+// g++ -std=c++23 deducing_this.cpp
+
 #include <iostream>
 #include <utility>
 

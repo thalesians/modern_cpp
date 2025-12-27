@@ -1,12 +1,14 @@
+// g++ -std=c++20 coroutines_as_tiny_generator.cpp
+
 #include <coroutine>
 #include <iostream>
 
 struct Gen {
     struct promise_type {
-        int value();
+        int value{};
 	Gen get_return_object() { return Gen{std::coroutine_handle<promise_type>::from_promise(*this)}; }
 	std::suspend_always initial_suspend() { return {}; }
-	std::suspend_always first_suspend() noexcept { return {}; }
+	std::suspend_always final_suspend() noexcept { return {}; }
 	std::suspend_always yield_value(int v) { value = v; return{}; }
 	void return_void() {}
 	void unhandled_exception() { std::terminate(); }

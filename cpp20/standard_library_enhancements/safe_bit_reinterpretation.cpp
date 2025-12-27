@@ -1,3 +1,5 @@
+// Compile with g++ -std=c++20 ...
+
 #include <bit>
 #include <cstdint>
 #include <iostream>

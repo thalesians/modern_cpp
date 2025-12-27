@@ -1,3 +1,5 @@
+// Compile with g++ -std=c++20 ...
+
 #include <algorithm>
 #include <iostream>
 #include <ranges>

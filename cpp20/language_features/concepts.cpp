@@ -1,3 +1,5 @@
+// g++ -std=c++20 concepts.cpp
+
 #include <concepts>
 #include <iostream>
 

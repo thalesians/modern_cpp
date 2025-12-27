@@ -1,4 +1,6 @@
 // Note: requires libstdc++ parallel algorithms support + often -ltbb depending on setup.
+// sudo apt install libtbb-dev
+// g++ -std=c++17 -O2 -pthread parallel_algorithms.cpp -ltbb -o parallel_algorithms
 
 #include <algorithm>
 #include <execution>

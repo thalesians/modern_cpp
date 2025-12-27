@@ -1,3 +1,5 @@
+// Compile with g++ -std=c++20 ...
+
 #include <iostream>
 #include <source_location>
 

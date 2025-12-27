@@ -1,3 +1,5 @@
+// g++ -std=c++23 expected.cpp
+
 #include <expected>
 #include <iostream>
 #include <string>
